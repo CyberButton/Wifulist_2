@@ -154,54 +154,54 @@ object carsCollection {
     )
     val sportsCars = listOf<Car>(
         Car(
-            name = "",
-            image = R.drawable,
-            specs = ""
+            name = "Lexus LC",
+            image = R.drawable.lexus_lc,
+            specs = "Easily one of the best luxury sports cars money can buy, the Lexus LC touts a downright striking, unibody design. Seriously, this top sports car is like a swift shark of wielded steel and aluminium on wheels. Naturally, the interior is no less elegant, with supremely comfortable seats and all sorts of sophisticated details. Powering the ride is a 471 hp 5.0-litre V8 engine, joined by a 10-speed electronically controlled Direct-Shift transmission with magnesium paddle shifters. If you can afford it, you should buy it."
         ),
         Car(
-            name = "",
-            image = R.drawable,
-            specs = ""
+            name = "Lamborghini Huracán",
+            image = R.drawable.lamborghini_huracan,
+            specs = "“Here I am, rock me like a hurricane!” sings the Lamborghini Huracán. This sexy, agile beast puts the “super” in supercar one spec at a time. The exterior takes design cues from the hexagonal shape of a carbon atom, though one doesn’t need context in order to appreciate those aerodynamic curves or that low-slung roof. Under the skin you’ll find a naturally aspirated 5.2 V10 engine and seven-speed dual-clutch automatic. Further distinguishing the vehicle is an array of exterior LED lights that make this baby glow literally and figuratively at all hours of the night."
         ),
         Car(
-            name = "",
-            image = R.drawable,
-            specs = ""
+            name = "Audi R8",
+            image = R.drawable.audi_r8,
+            specs = "Track-tested and road-approved, the Audi R8 Coupe delivers top shelf performance and jaw-dropping style in equal measure. Featuring about half the same specs as the brand’s R8 LMS GT3 race car, this is accordingly one powerful, lightweight ride. The R8’s naturally aspirated 5.2 V10 engine generates up to 610 hp and 413 ft-lbs of torque, getting the car from 0-62 mph in 3.2 seconds flat. Also featured on the standard model is seven-speed automatic transmission, all-wheel drive and a downright gorgeous interior awash with comfort and technology."
         ),
         Car(
-            name = "",
-            image = R.drawable,
-            specs = ""
+            name = "Chevrolet Corvette Z06",
+            image = R.drawable.corvette_z06,
+            specs = "Supremely powerful and wildly acclaimed, the Chevrolet Corvette Z06 is everything that the best sports cars are made of. It was developed in tandem with the C7.R race car and similarly exudes a track-ready vibe. Choose between the coupe and convertible and expect to feel like you’re flying by way of a supercharged aluminium 6.2-litre V-8 engine. That engine, by the way, delivers a formidable 650 hp and 650 ft-lbs of torque, getting the car from 0-60 mph in 2.95 seconds. Upgrade to the Z07 Performance package and get all sorts of extra goodies like carbon-ceramic brakes and adjustable aero bits. Serious sports car lovers need not look further. "
         ),
         Car(
-            name = "",
-            image = R.drawable,
-            specs = ""
+            name = "McLaren 720S",
+            image = R.drawable.mclaren_720s,
+            specs = "A top sports car that needs no introduction, the McLaren 720S puts the utmost tier of power and agility within a preciously lightweight, indisputably sexy package. At the heart of this curvy, aerodynamic supercar is a 710-hp twin-turbo 4.0-litre V8 with seven-speed automatic. The car also offers a range of driving modes such as Comfort, Sport, Drift and even Track for all the speed demons out there. Inside you’ll find a digital gauge cluster and infotainment system. Specs aside, all it takes is one look to know the McLaren 720S is among the best sports cars in the world."
         ),
         Car(
-            name = "",
-            image = R.drawable,
-            specs = ""
+            name = "Porsche 911 GT3 RS",
+            image = R.drawable.porsche_911_gt3_rs,
+            specs = "No list of top sports cars is complete without Porsche, and the 911 GT3 RS is accordingly a tight and powerful work of automotive achievement. Thanks to lightweight carbon construction, large front air intakes and a naturally aspirated 4.0-litre six-cylinder engine, this speedy stunner goes from 0-62 mph in 3.2 seconds and generates up to 520 hp. Get the 911 GT3 RS to the track and you can push it to speeds of up to 195 mph."
         ),
         Car(
-            name = "",
-            image = R.drawable,
-            specs = ""
+            name = "Ferrari 812 Superfast",
+            image = R.drawable.ferrari_812_superfast,
+            specs = "Making good on its name, the Ferrari 812 Superfast is one of the quickest and most powerful sports cars ever produced by the Italian automaker. Hosting rear wheel drive and a strategically placed 789 hp 6.5-litre V-12 engine, the acclaimed grand tourer reportedly achieves a top speed of 211 mph. Also featured is an active diffuser and a streamlined, aerodynamic design. With this top sports car at your disposal, the only thing getting in your way are stop lights and finish lines."
         ),
         Car(
-            name = "",
-            image = R.drawable,
-            specs = ""
+            name = "Ford GT",
+            image = R.drawable.ford_gt,
+            specs = "While we’re riding high on supercars, allow us to introduce the Ford GT. This lean, mean, insanely fast machine cranks 647 hp out of its twin-turbo 3.5-litre V-6 engine with seven-speed dual-clutch transmission. That’s joined by a slew of aerodynamic features like adjustable suspension and carbon fire construction. In other words, expect minimal drag and maximum downforce from this lightweight masterpiece. It all amounts to one heck of a smooth, swift ride."
         ),
         Car(
-            name = "",
-            image = R.drawable,
-            specs = ""
+            name = "Dodge Challenger SRT Demon",
+            image = R.drawable.dodge_challenger_srt_demon,
+            specs = "Pairing a prime vintage aesthetic with copious amounts of modern power is the Dodge Challenger SRT Demon. This limited edition muscle car comes equipped with a supercharged 6.2-litre V-8 good for a whopping 808 hp, a number that goes up to 840 hp if you get the Demon Package. With the reported ability to travel a quarter mile in just 9.65 seconds (not to mention a 0-60 mph time of 2.3 seconds), this veritable dragster is frequently pointed to as the swiftest production car in the world. Fast and furious, indeed."
         ),
         Car(
-            name = "",
-            image = R.drawable,
-            specs = ""
+            name = "Lotus Evora 400",
+            image = R.drawable.lotus_evora_400,
+            specs = "Touted by Lotus as their fastest road car of the new millennium, the Evora 400 delivers a lightweight body and 400 hp from its 3.5-litre supercharged V6 engine. To improve upon previous models, Lotus lowered and widened the chassis, took 93 pounds off the body weight and spruced up the cabin. That means the top sports car is more optimal and comfortable than ever before, rocking a superb power-to-weight ratio along with spectacular aerodynamics. Needless to say, you can do far worse."
         ),
     )
 }
