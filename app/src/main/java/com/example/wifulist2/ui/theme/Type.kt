@@ -1,4 +1,4 @@
-package com.example.wifulist2.ui.theme
+package com.example.wifulist2.myUI.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

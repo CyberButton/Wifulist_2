@@ -10,7 +10,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.wifulist2.ui.theme.Wifulist2Theme
+import com.example.wifulist2.myUI.theme.Wifulist2Theme
+import com.example.wifulist2.ui.WelcomeScreenWithExpandedListOfCarTypes
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,22 +23,17 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    WelcomeScreenWithExpandedListOfCarTypes()
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     Wifulist2Theme {
-        Greeting("Android")
+        WelcomeScreenWithExpandedListOfCarTypes()
     }
 }
