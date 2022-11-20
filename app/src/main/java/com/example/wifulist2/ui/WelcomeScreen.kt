@@ -2,6 +2,7 @@ package com.example.wifulist2.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -13,7 +14,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
@@ -24,7 +24,7 @@ import com.example.wifulist2.data.carsCollection
 
 @Composable
 fun WelcomeScreenWithExpandedListOfCarTypes(
-
+    onChoiceMade: (CarsType) -> Unit
 ) {
     Scaffold(topBar = {
         TopAppBar(
@@ -56,7 +56,7 @@ fun WelcomeScreenWithExpandedListOfCarTypes(
     )
     { padding ->
         Column() {
-            Spacer(modifier = Modifier.height(20.dp))
+            Spacer(modifier = Modifier.height(24.dp))
             Box(
                 modifier = Modifier
                     .padding(padding)
@@ -69,11 +69,12 @@ fun WelcomeScreenWithExpandedListOfCarTypes(
                         )
                     )
                     .background(color = MaterialTheme.colors.primary)
+                    .fillMaxSize()
             ) {
                 Column() {
-                    CardWithCarType(cartype = CarsType.DAILY_DRIVERS)
-//              CardWithCarType(cartype = CarsType.SPORTS_CARS)
-                    CardWithCarType(cartype = CarsType.HYPERCARS)
+                    CardWithCarType(cartype = CarsType.DAILY_DRIVERS, onChoiceMade = onChoiceMade)
+                    CardWithCarType(cartype = CarsType.SPORTS_CARS, onChoiceMade = onChoiceMade)
+                    CardWithCarType(cartype = CarsType.HYPERCARS, onChoiceMade = onChoiceMade)
                 }
             }
         }
@@ -82,26 +83,33 @@ fun WelcomeScreenWithExpandedListOfCarTypes(
 
 @Composable
 fun CardWithCarType(
-    cartype: CarsType
+    cartype: CarsType,
+    onChoiceMade: (CarsType) -> Unit
 ) {
     when (cartype) {
         CarsType.DAILY_DRIVERS -> {
             CardContent(
                 cartype = "Daily Drivers",
-                carimage = carsCollection.dailyDrivers
-            ) {}
+                carimage = carsCollection.dailyDrivers,
+                forNavigation = cartype,
+                onClick = onChoiceMade
+            )
         }
         CarsType.SPORTS_CARS -> {
-//            CardContent(
-//                cartype = "",
-//                carimage =
-//            ) {}
+            CardContent(
+                cartype = "Sports Cars",
+                carimage = carsCollection.sportsCars,
+                forNavigation = cartype,
+                onClick = onChoiceMade
+            )
         }
         CarsType.HYPERCARS -> {
             CardContent(
-                cartype = "HyperCars",
-                carimage = carsCollection.hyperCars
-            ) {}
+                cartype = "Hyper Cars",
+                carimage = carsCollection.hyperCars,
+                forNavigation = cartype,
+                onClick = onChoiceMade
+            )
         }
     }
 }
@@ -110,20 +118,24 @@ fun CardWithCarType(
 fun CardContent(
     cartype: String,
     carimage: List<Car>,
+    forNavigation: CarsType,
     modifier: Modifier = Modifier,
-    onClick: () -> Unit
+    onClick: (CarsType) -> Unit
 ) {
-    Box(modifier = Modifier) {
+    Box(modifier = Modifier.clickable {
+        onClick(forNavigation)
+    }) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Box(
                 modifier = Modifier
                     .padding(
                         36.dp,
-                        36.dp,
+                        28.dp,
                         36.dp,
                         0.dp
                     )
                     .aspectRatio(16f / 9f)
+                    .fillMaxSize()
             ) {
                 Image(
                     painter = painterResource(id = carimage[2].image),

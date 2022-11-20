@@ -11,7 +11,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.wifulist2.myUI.theme.Wifulist2Theme
+import com.example.wifulist2.ui.CarsUiState
+import com.example.wifulist2.ui.CarsViewModel
+import com.example.wifulist2.ui.MainScreen
 import com.example.wifulist2.ui.WelcomeScreenWithExpandedListOfCarTypes
+
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +28,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    WelcomeScreenWithExpandedListOfCarTypes()
+                    MainScreen()
                 }
             }
         }
@@ -34,6 +39,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     Wifulist2Theme {
-        WelcomeScreenWithExpandedListOfCarTypes()
+        MainScreen()
     }
 }

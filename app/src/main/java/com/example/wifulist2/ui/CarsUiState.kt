@@ -6,7 +6,7 @@ import com.example.wifulist2.data.CarsType
 import com.example.wifulist2.data.carsCollection
 
 data class CarsUiState(
-    val isShowingHomePage: Boolean = true,
+    //val isShowingHomePage: Boolean = true,
     val currentOrientation: Int = Configuration.ORIENTATION_PORTRAIT,
     val selectedCarType: CarsType = CarsType.DAILY_DRIVERS,
     val selectedCar: Car = carsCollection.dailyDrivers[0]
