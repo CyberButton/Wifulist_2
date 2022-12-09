@@ -104,18 +104,18 @@ object carsCollection {
             specs = "Remember what we said about hypercars coming straight out of a Batman movie? For proof, consider the Aston Martin Valkyrie. Indeed, your blood will flow faster just by looking at this beautiful beast, which is slated to hit the road some time in 2018. To make good on its hypercar status, the Valkyrie will tout cutting-edge aerodynamics, carbon fibre bodywork, space age engineering, downright ridiculous speed, a Rimac-built Kinetic Energy Recovery System and (reportedly) a mind-boggling 1:1 power-to-weight ratio. For about \$3 million USD, it can be all yours."
         ),
         Car(
-            name = "",
+            name = "Bugatti Bolide",
             image = R.drawable.bugatti_bolide,
             specs = "The Bugatti Bolide is a hypercar with an in-your-face demeanor that causes you to sit up and take full notification. It is a monster, an exceptionally crude and horribly forceful one, that expects to break each limit and rethink each idea."+
                     " The Bolide is intended to be the quickest and most firm car from Bugatti, that is the reason it packs a 8.0-liter W16 motor that is equipped for releasing 1,825 strength and 1,364 pound-feet of force. The maximum velocity is more than 310 mph, with 0 to 60 mph occurring as quick as 2.17 seconds."
         ),
         Car(
-            name = "",
+            name = "Bugatti Chiron",
             image = R.drawable.bugatti_chiron,
             specs = "As a follow up to the groundbreaking Veyron (frequently credited as the world’s first hypercar), Bugatti released the legendary Chiron and somehow managed raised the bar. Under the hood of this top hypercar is an upgraded 8-litre quad-turbocharged W16 engine. Bolstered by a new two-stage turbocharging system, the muscular engine cranks out 1500 hp and gets the car from 0 to 62 mph in under 2.5 seconds. Inside the striking vehicle is a luxurious cockpit awash in LED lights. More than a hypercar, this mean machine is a torpedo on wheels."
         ),
         Car(
-            name = "",
+            name = "Devel Sixteen",
             image = R.drawable.devel_16,
             specs = "Let’s talk engines first, with the Devel Sixteen bearing a V16, so built by Steve Morris. That said; while the engine is powerful, displacing 12.3-liters and further amped up by four turbocharges, in essence, it is two Chevrolet V8s welded together, period. " +
                     "Apparently, this very engine, hacksaw as it may sound, will jet 5007 horsepower. Let that sink in. We are not talking about a hypercar that can make 1,000 horses, we are talking about a car that will jet more than 5,000 pounding horses from its quad-turbocharged V16."

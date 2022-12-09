@@ -53,9 +53,11 @@ fun MainScreen(
             }
             composable(route = CarsScreens.CHOOSE_CAR.title) {
                 ListOfCarsScreen(
-//                onChoiceMade = {
-//                    navController.navigate(CarsScreens.CAR_SPECS.title)
-//                }
+                    onChoiceMadeCar = {
+                    viewModel.changeCar(it)
+                    navController.navigate(CarsScreens.CAR_SPECS.title)
+                },
+                    currentCarType = uiState.selectedCarType
                 )
             }
             composable(route = CarsScreens.CAR_SPECS.title) {
