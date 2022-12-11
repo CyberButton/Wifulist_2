@@ -50,7 +50,7 @@ fun ListOfCarsScreen(
                 Text(
                     text = currentCarType.name,
                     style = MaterialTheme.typography.h4,
-                    color = MaterialTheme.colors.onBackground
+                    color = MaterialTheme.colors.onPrimary
                 )
             }
         }

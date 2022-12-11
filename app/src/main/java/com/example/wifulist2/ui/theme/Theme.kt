@@ -1,10 +1,12 @@
-package com.example.wifulist2.myUI.theme
+package com.example.wifulist2.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import com.example.wifulist2.myUI.theme.Shapes
+import com.example.wifulist2.myUI.theme.Typography
 
 private val DarkColorPalette = darkColors(
     primary = Purple200,

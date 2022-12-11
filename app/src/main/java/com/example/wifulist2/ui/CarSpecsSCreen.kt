@@ -1,6 +1,5 @@
 package com.example.wifulist2.ui
 
-import android.content.ClipData.Item
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -14,13 +13,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.wifulist2.data.Car
-import com.example.wifulist2.data.CarsType
-import com.example.wifulist2.data.carsCollection
 
 @Composable
 fun CarSpecsScreen(
@@ -49,7 +45,7 @@ fun CarSpecsScreen(
                 Text(
                     text = currentCarSpec.name,
                     style = MaterialTheme.typography.h4,
-                    color = MaterialTheme.colors.onBackground
+                    color = MaterialTheme.colors.onPrimary
                 )
             }
         }

@@ -57,7 +57,7 @@ fun WelcomeScreenWithExpandedListOfCarTypes(
                 Text(
                     text = "Choose a car type",
                     style = MaterialTheme.typography.h4,
-                    color = MaterialTheme.colors.onBackground
+                    color = MaterialTheme.colors.onPrimary
                 )
             }
             }

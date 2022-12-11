@@ -9,8 +9,8 @@ import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.wifulist2.myUI.theme.Wifulist2Theme
 import com.example.wifulist2.ui.MainScreen
+import com.example.wifulist2.ui.theme.Wifulist2Theme
 
 
 class MainActivity : ComponentActivity() {
