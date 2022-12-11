@@ -1,12 +1,10 @@
 package com.example.wifulist2.ui
 
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -82,7 +80,7 @@ fun ListOfCarsScreen(
                             )
                         }
                     }
-                    }
+                }
 
                 CarsType.HYPERCARS -> {
                     for (car in carsCollection.hyperCars) {
@@ -93,11 +91,11 @@ fun ListOfCarsScreen(
                             )
                         }
                     }
-                    }
                 }
             }
         }
     }
+}
 
 @Composable
 fun CarCard(
@@ -111,15 +109,17 @@ fun CarCard(
         28.dp,
         36.dp,
         0.dp
-    ),
+    ).fillMaxSize(),
         backgroundColor = MaterialTheme.colors.primary
 
     ) {
-        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Column(//horizontalAlignment = Alignment.CenterHorizontally
+        ) {
             Image(
                 painter = painterResource(id = carID.image),
                 contentDescription = null,
-                contentScale = ContentScale.Fit
+                contentScale = ContentScale.FillWidth,
+                modifier = Modifier.height(150.dp).fillMaxWidth()
             )
 
             Text(
